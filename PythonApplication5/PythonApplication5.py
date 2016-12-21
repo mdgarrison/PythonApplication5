@@ -64,14 +64,22 @@ dates = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,
 #yvals = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]
 yvals = [0,0,0,1,1,1,2,2,2,3,3,3,3,3,3,3,4,4,4,5,5,6,6,6,6,6,6,6,6,6,6,6]
 
+f = open('LogFile.txt', 'r')
+
+for line in f:
+    print(line,)
+
 #pw.plot(x=dates, y=yvals, symbol='o')
 pw.plot(x=[0,1,7,11], y=[0,0,0,0], symbol='o')
+"""
 pw.plot(x=[20,24,30,41], y=[0,0,0,0], symbol='o')
+"""
 pw.plot(x=[2,4,5,10], y=[1,1,1,1], symbol='o')
 pw.plot(x=[12,14,15], y=[2,2,2], symbol='o')
-pw.plot(x=[12,14,15], y=[3,3,3], symbol='o')
-pw.plot(x=[12,14,15], y=[4,4,4], symbol='o')
-pw.plot(x=[12,14,15], y=[5,5,5], symbol='o')
+pw.plot(x=[13,17,27], y=[3,3,3], symbol='o')
+pw.plot(x=[16,19,28], y=[4,4,4], symbol='o')
+pw.plot(x=[21,24,25], y=[5,5,5], symbol='o')
+"""
 pw.plot(x=[12,14,15], y=[6,6,6], symbol='o')
 pw.plot(x=[12,14,15], y=[7,7,7], symbol='o')
 pw.plot(x=[12,14,15], y=[8,8,8], symbol='o')
@@ -98,6 +106,7 @@ pw.plot(x=[12,14,15], y=[28,28,28], symbol='o')
 pw.plot(x=[12,14,15], y=[29,29,29], symbol='o')
 pw.plot(x=[0,1,3,7], y=[30,30,30,30], symbol='o')
 pw.plot(x=[2,4,5,10], y=[31,31,31,31], symbol='o')
+"""
 pw.show()
 pw.setWindowTitle('pyqtgraph example: customPlot')
 
